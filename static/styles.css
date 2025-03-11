@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #001f3f; /* Dark blue background */
+    color: white; /* White text */
+    margin: 0;
+    padding: 0;
+    height: 95vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.chat-container {
+    width: 100vw; /* Full viewport width */
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #002b4d; /* Slightly lighter dark blue */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#username-container {
+    position: absolute;
+    top: 60%; /* Position 60% from the top */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#username-container input {
+    padding: 10px;
+    background-color: #002b4d; /* Dark blue input background */
+    color: white; /* White text */
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 200px; /* Fixed width for input */
+    text-align: center;
+}
+
+#username-container button {
+    padding: 10px 15px;
+    background: #0074D9; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#username-container button:hover {
+    background: #005bb5; /* Darker blue on hover */
+}
+
+#chat-box {
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #003366; /* Darker blue for chat box */
+    text-align: left;
+    width: 100%;
+    display: none; /* Hidden by default */
+}
+
+#chat-box strong {
+    color: #00FFFF; /* Neon color for usernames */
+    margin-left: 5px;
+}
+
+#chat-box .message-text {
+    color: white; /* White text for messages */
+}
+
+#chat-interface {
+    padding: 10px;
+    background: #002b4d; /* Dark blue background for chat interface */
+    display: none; /* Hidden by default */
+    gap: 10px;
+    width: 100%;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #002b4d; /* Dark blue input background */
+    color: white; /* White text */
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #0074D9; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #005bb5; /* Darker blue on hover */
+}
